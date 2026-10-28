@@ -58,6 +58,9 @@
 <form class="consult" id="consultForm">
 <input id="cf-name" type="text" placeholder="Your full name" required>
 <input id="cf-phone" type="tel" placeholder="Your phone number" required>
+<p style="font-size:13px;color:var(--grey)">Preferred appointment (optional)</p>
+<input id="cf-date" type="date" aria-label="Preferred appointment date">
+<select id="cf-time"><option value="">Preferred time: any</option><option>9:00 AM</option><option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option><option>1:00 PM</option><option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option><option>5:00 PM</option><option>6:00 PM</option><option>7:00 PM</option></select>
 <select id="cf-area">
 <option value="">Select your matter</option>
 <option>Civil Law</option><option>Criminal Law</option><option>Family Law</option><option>Banking Law</option><option>Corporate Law</option><option>Revenue Law</option><option>Rent Law</option><option>Insurance Law</option><option>Labour Law</option>
@@ -67,6 +70,15 @@
 <button class="btn solid" type="submit">Send via WhatsApp</button>
 <p style="font-size:13px;color:var(--grey)">Your details open in WhatsApp, addressed directly to Adv. Farhan Khan Seelro. Nothing is stored on this website.</p>
 </form>
+</div>
+
+<div class="rv" style="margin-top:56px">
+<div class="sec-head">
+<div class="kicker">Find the Chamber</div>
+<h2>Visit Us in Upper Gizri</h2>
+<div class="rule"></div>
+</div>
+<div class="map-frame"><iframe title="Seelro and Co. Law Associates office location map" src="https://maps.google.com/maps?q=Aziz%20Heights%20Upper%20Gizri%20Karachi&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe></div>
 </div>
 
 <div style="max-width:860px;margin:56px auto 0">
@@ -125,7 +137,7 @@ if(f){f.addEventListener('submit',function(ev){ev.preventDefault();
 var n=document.getElementById('cf-name').value.trim(),p=document.getElementById('cf-phone').value.trim(),
 a=document.getElementById('cf-area').value,d=document.getElementById('cf-msg').value.trim();
 var text='Consultation Request, Seelro & Co. Website%0AName: '+encodeURIComponent(n)+'%0APhone: '+encodeURIComponent(p)+'%0AMatter: '+encodeURIComponent(a)+'%0ADetails: '+encodeURIComponent(d);
-window.open('https://wa.me/923013530007?text='+text,'_blank');});}
+var dt=document.getElementById('cf-date'),tm=document.getElementById('cf-time');if(dt&&tm&&(dt.value||tm.value)){text+='%0APreferred appointment: '+encodeURIComponent((dt.value||'')+' '+(tm.value||''));}window.open('https://wa.me/923013530007?text='+text,'_blank');});}
 </script>
 
 </body>
