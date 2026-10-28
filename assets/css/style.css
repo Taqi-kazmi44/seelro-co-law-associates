@@ -147,4 +147,9 @@ footer .fine{border-top:1px solid rgba(255,255,255,.16);padding:22px 0;font-size
 .sbtn.dark{background:var(--black);color:#fff}
 .sbtn.dark:hover{background:#fff;color:var(--black)}
 .chip{display:inline-block;border:1px solid var(--line);padding:8px 14px;margin:0 8px 8px 0;font-size:13.5px;background:#fff}
+.courts{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.courts figure{border:1px solid var(--line);background:#fff;padding:10px}
+.courts img{width:100%;height:230px;object-fit:cover}
+.courts figcaption{font-size:13px;letter-spacing:.06em;padding:10px 4px 2px;color:var(--grey)}
+@media(max-width:900px){.courts{grid-template-columns:1fr}.courts img{height:auto}}
 .wordmark{font-family:'Fraunces',Georgia,serif;font-size:clamp(50px,10.6vw,148px);line-height:.96;color:rgba(255,255,255,.13);text-align:center;padding:30px 0 4px;letter-spacing:.03em;white-space:nowrap;overflow:hidden}
