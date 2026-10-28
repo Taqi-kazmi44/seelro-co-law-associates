@@ -101,7 +101,7 @@ if(f){f.addEventListener('submit',function(ev){ev.preventDefault();
 var n=document.getElementById('cf-name').value.trim(),p=document.getElementById('cf-phone').value.trim(),
 a=document.getElementById('cf-area').value,d=document.getElementById('cf-msg').value.trim();
 var text='Consultation Request, Seelro & Co. Website%0AName: '+encodeURIComponent(n)+'%0APhone: '+encodeURIComponent(p)+'%0AMatter: '+encodeURIComponent(a)+'%0ADetails: '+encodeURIComponent(d);
-window.open('https://wa.me/923013530007?text='+text,'_blank');});}
+var dt=document.getElementById('cf-date'),tm=document.getElementById('cf-time');if(dt&&tm&&(dt.value||tm.value)){text+='%0APreferred appointment: '+encodeURIComponent((dt.value||'')+' '+(tm.value||''));}window.open('https://wa.me/923013530007?text='+text,'_blank');});}
 </script>
 
 </body>
