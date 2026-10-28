@@ -54,7 +54,7 @@ section.alt{background:var(--soft)}
 /* team */
 .team-card{border:1px solid var(--line);background:#fff;overflow:hidden}
 .team-card .photo{aspect-ratio:4/4.4;overflow:hidden;background:#111}
-.team-card .photo img{width:100%;height:100%;object-fit:cover;object-position:top center;filter:grayscale(100%)}
+.team-card .photo img{width:100%;height:100%;object-fit:cover;object-position:top center}
 .team-card .mono{aspect-ratio:4/4.4;background:var(--black);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:110px}
 .team-card .body{padding:30px}
 .team-card .role{letter-spacing:.26em;text-transform:uppercase;font-size:11.5px;font-weight:600;color:var(--grey)}
@@ -63,7 +63,7 @@ section.alt{background:var(--soft)}
 /* split */
 .split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
 .split .frame{border:1.5px solid var(--black);padding:12px}
-.split .frame img{filter:grayscale(100%)}
+.split .frame img{width:100%}
 .checklist{list-style:none;margin-top:22px}
 .checklist li{padding:10px 0 10px 34px;position:relative;border-bottom:1px solid var(--line)}
 .checklist li:before{content:"—";position:absolute;left:2px;font-weight:700}
