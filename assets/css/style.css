@@ -141,4 +141,10 @@ footer .fine{border-top:1px solid rgba(255,255,255,.16);padding:22px 0;font-size
 .manifesto .kick{letter-spacing:.34em;text-transform:uppercase;font-size:11.5px;font-weight:600}
 .manifesto p{font-family:'Fraunces',Georgia,serif;font-size:clamp(26px,3.6vw,41px);line-height:1.38;max-width:920px;margin:22px auto 0;font-weight:600}
 .manifesto p em{font-style:italic}
+.share-bar{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.sbtn{display:inline-block;border:1.5px solid var(--black);padding:12px 20px;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;transition:.25s;background:#fff;color:var(--black)}
+.sbtn:hover{background:var(--black);color:#fff}
+.sbtn.dark{background:var(--black);color:#fff}
+.sbtn.dark:hover{background:#fff;color:var(--black)}
+.chip{display:inline-block;border:1px solid var(--line);padding:8px 14px;margin:0 8px 8px 0;font-size:13.5px;background:#fff}
 .wordmark{font-family:'Fraunces',Georgia,serif;font-size:clamp(50px,10.6vw,148px);line-height:.96;color:rgba(255,255,255,.13);text-align:center;padding:30px 0 4px;letter-spacing:.03em;white-space:nowrap;overflow:hidden}
