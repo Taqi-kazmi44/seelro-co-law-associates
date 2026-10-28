@@ -37,7 +37,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.98);border-
 .hero-img{border:1px solid rgba(255,255,255,.4);padding:10px;background:rgba(255,255,255,.05);box-shadow:16px 16px 0 rgba(255,255,255,.13)}
 .hero-img img{width:100%;height:auto}
 .hero-img .cap{font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:#c9c9c9;padding-top:10px;text-align:center}
-.hero h1{font-size:clamp(44px,6.6vw,80px);line-height:1.06;max-width:860px;margin:24px 0 22px;position:relative;z-index:1}
+.hero h1{font-size:clamp(48px,7.4vw,96px);line-height:1.06;max-width:860px;margin:24px 0 22px;position:relative;z-index:1}
 .hero h1 em{font-style:italic;font-weight:600}
 .hero p.lead{font-size:18.5px;color:#dcdcdc;max-width:660px;font-weight:300;position:relative;z-index:1}
 .hero .cta{margin-top:40px;display:flex;gap:14px;flex-wrap:wrap;position:relative;z-index:1}
@@ -50,7 +50,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.98);border-
 .marquee span{margin:0 26px}
 .marquee i{font-style:normal;color:#b5b5b5}
 @keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-section{padding:92px 0}
+section{padding:116px 0}
 section.alt{background:var(--soft)}
 .sec-head{max-width:700px;margin-bottom:50px}
 .sec-head h2{font-size:clamp(31px,4vw,45px);line-height:1.15;margin-top:14px}
@@ -122,3 +122,21 @@ footer .fine{border-top:1px solid rgba(255,255,255,.16);padding:22px 0;font-size
 @media(max-width:1000px){.steps{grid-template-columns:1fr 1fr}}
 @media(max-width:900px){.hero-grid{grid-template-columns:1fr}.grid.c3{grid-template-columns:1fr 1fr}.split,.contact-grid{grid-template-columns:1fr}footer .cols{grid-template-columns:1fr 1fr}}
 @media(max-width:640px){.grid.c3,.grid.c2,.steps{grid-template-columns:1fr}.nav ul{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;padding:18px 24px;border-bottom:1px solid var(--line);gap:14px}.nav ul.open{display:flex}.burger{display:block}.nav .btn{display:none}footer .cols{grid-template-columns:1fr}.stats div{margin-right:20px;padding-right:8px}.callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:59;background:var(--black);color:#fff}.callbar a{flex:1;text-align:center;padding:14px 6px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600}.callbar a+a{border-left:1px solid rgba(255,255,255,.25)}.wa-float{display:none}body{padding-bottom:46px}}
+/* luxury pass 2026-10-29 */
+.nav ul a{position:relative}
+.nav ul a:after{content:"";position:absolute;left:0;bottom:-2px;height:2px;width:0;background:#000;transition:width .3s ease}
+.nav ul a:hover:after,.nav ul a.active:after{width:100%}
+.btn{transition:all .3s ease}
+.btn:hover{letter-spacing:.24em}
+.card{position:relative;overflow:hidden}
+.card:before{content:"";position:absolute;top:0;left:0;height:3px;width:0;background:#000;transition:width .4s ease;z-index:1}
+.card:hover:before{width:100%}
+.team-card .photo img{transition:transform .9s ease}
+.team-card:hover .photo img{transform:scale(1.045)}
+.sec-head .kicker{display:flex;align-items:center;gap:14px}
+.sec-head .kicker:before{content:"";width:40px;height:1.5px;background:#000;flex:none}
+.manifesto{background:#fff;text-align:center}
+.manifesto .kick{letter-spacing:.34em;text-transform:uppercase;font-size:11.5px;font-weight:600}
+.manifesto p{font-family:'Fraunces',Georgia,serif;font-size:clamp(26px,3.6vw,41px);line-height:1.38;max-width:920px;margin:22px auto 0;font-weight:600}
+.manifesto p em{font-style:italic}
+.wordmark{font-family:'Fraunces',Georgia,serif;font-size:clamp(50px,10.6vw,148px);line-height:.96;color:rgba(255,255,255,.13);text-align:center;padding:30px 0 4px;letter-spacing:.03em;white-space:nowrap;overflow:hidden}
